@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+
+.all {
+    margin: 0 auto;
+    background-color: lightgreen;
+}
+
+.scores {
+    text-align: left;
+    margin-left: 150px;
+}
+
+.options {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}

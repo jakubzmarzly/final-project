@@ -4,7 +4,52 @@
     <meta charset="UTF-8">
     <title>Rock, Paper, Scissors!</title>
 </head>
+<link href="stylesheet.css" rel="stylesheet">
 
 <!--
     Author: Jakub Zmarzly
 -->
+<body>
+    <div class="all">
+        <h1>Rock, Paper, Scissors!</h1> 
+    </br>
+        <h2>First to 5 Wins is Victorious</h2>
+    </br>
+        <div class="scores">
+            <h2>
+            Your Score:
+            <span id="userScore">0</span>
+            </h2>
+            <h2>
+            Computer's Score:
+            <span id="computerScore">0</span>
+            </h2>
+        </div>
+        <div class="options">
+            <div class="move">
+                <h1>You</h1>
+                <img id="userMove" src="rock.png" width="200" height="200">
+            </div>
+            <div class="move">
+                <h1>Computer</h1>
+                <img id="computerMove" src="rock.png" width="200" height="200">
+            </div>
+        </div>
+        <h2>Select your Attack</h2> 
+    </br>
+        <div class="attack">
+            <input class="moves" type="image" src="rock.png" width="300" height="300" value=Rock />
+            <input class="moves" type="image" src="paper.png" width="300" height="300" value=Paper />
+            <input class="moves" type="image" src="scissors.png" width="300" height="300" value=Scissors />
+        </div>
+    </div>
+</body>
+
+<script>
+let userScore=1;
+let computerScore=1;
+
+const uScore = document.getElementById("userScore");
+const cScore = document.getElementById("computerScore")
+const optons = document.querySelectorAll
+</script>
