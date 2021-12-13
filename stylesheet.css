@@ -1,10 +1,14 @@
 body {
     text-align: center;
+    margin: 0;
+    background-color: lightskyblue;
+    border-style: solid;
+    border-width: 50px;
+    border-color: lightslategray;
 }
 
 .all {
     margin: 0 auto;
-    background-color: lightgreen;
 }
 
 .scores {

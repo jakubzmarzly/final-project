@@ -41,15 +41,35 @@
             <input class="moves" type="image" src="rock.png" width="300" height="300" value=Rock />
             <input class="moves" type="image" src="paper.png" width="300" height="300" value=Paper />
             <input class="moves" type="image" src="scissors.png" width="300" height="300" value=Scissors />
+    </br>
+    </br>
         </div>
     </div>
 </body>
 
 <script>
-let userScore=1;
-let computerScore=1;
+let uScore=0;
+let cScore=0;
 
-const uScore = document.getElementById("userScore");
-const cScore = document.getElementById("computerScore")
-const optons = document.querySelectorAll
+const userScore = document.getElementById("userScore");
+const computerScore = document.getElementById("computerScore");
+const options = document.querySelectorAll("moves");
+
+options.forEach((option) => {
+      option.addEventListener("click", function () {
+        const userInput = this.textContent;
+        const userOptions = ["Rock", "Paper", "Scissors"];
+        const computerInput = computerOptions[Math.floor(Math.random() * 3)];
+
+        compareInputs(userInput, computerInput);
+        updateScore();
+        if (checkWinner()) {
+          userScore = computerScore = 0;
+          updateScore();
+        }
+      });
+    });
+
+function compareInputs(userInput, computerInput);
+
 </script>
